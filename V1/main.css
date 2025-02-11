@@ -1,0 +1,211 @@
+/* Main styling for Vibey-Vibes Theme */
+
+/* App Background Transparency */
+#app-mount {
+  background: transparent !important;
+}
+
+.app-2rEoOp {
+  background: var(--background-overlay) !important;
+  backdrop-filter: blur(var(--background-blur));
+}
+
+/* Channels and Server List */
+.container-2lgZY8 {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-2K8pFh {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Chat Area */
+.chat-3bRxxu {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.content-yTz4x3:before {
+  display: none;
+}
+
+/* Messages */
+.message-2qnXI6 {
+  background: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.message-2qnXI6:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Server List */
+.wrapper-3NnKdC {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.scroller-1Bvpku {
+  background: transparent;
+}
+
+/* Members List */
+.members-1998pB {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Channel Header */
+.title-3qD0b- {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Search Bar */
+.searchBar-3dMhjb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons and Interactive Elements */
+.button-1YfofB {
+  background: var(--gradient-primary) !important;
+  transition: opacity 0.2s ease;
+}
+
+.button-1YfofB:hover {
+  opacity: 0.9;
+}
+
+/* Text Input Areas */
+.channelTextArea-rNsIhG {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.scrollableContainer-2NUZem {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Server Boost Page */
+.perksModal-fSYqOq {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Settings Menu */
+.sidebarRegionScroller-3MXcoP {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.contentRegionScroller-26nc1e {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Server Icons Animation */
+.listItem-GuPuDH {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom Mention Styling */
+.mentioned-xhSam7 {
+  background: linear-gradient(90deg, var(--main-color) 0%, transparent) !important;
+  opacity: 0.7;
+}
+
+.mentioned-xhSam7:hover {
+  opacity: 1;
+}
+
+/* Role Pills */
+.role-2irmRk {
+  background: var(--gradient-secondary);
+  transform: scale(0.9);
+  transition: transform 0.2s ease;
+}
+
+.role-2irmRk:hover {
+  transform: scale(1);
+}
+
+/* Status Indicators */
+.status-1AY8sU {
+  box-shadow: 0 0 5px var(--status-color);
+}
+
+/* Emoji Picker */
+.emojiPicker-3PwZFl {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(5px);
+}
+
+/* Voice Channel Effects */
+.voiceUser-1K6Xox {
+  transition: transform 0.2s ease;
+}
+
+.voiceUser-1K6Xox:hover {
+  transform: translateX(5px);
+}
+
+/* Custom Scrollbar for Code Blocks */
+.hljs::-webkit-scrollbar {
+  height: 8px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hljs::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 4px;
+}
+
+/* Server Folders */
+.folder-1hbNCn {
+  background: var(--gradient-tertiary) !important;
+}
+
+/* Profile Cards */
+.userPopout-xaxa6l {
+  backdrop-filter: blur(var(--user-popout-blur));
+  background: var(--user-popout-overlay) !important;
+}
+
+/* Tooltips */
+.tooltip-2QfLtc {
+  background: var(--gradient-primary) !important;
+  backdrop-filter: blur(5px);
+}
+
+/* Context Menus */
+.menu-3sdvDG {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(5px);
+}
+
+.item-1tOPte:hover {
+  background: var(--gradient-primary) !important;
+}
+
+/* Modal Windows */
+.root-1gCeng {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(var(--backdrop-blur));
+}
+
+/* Custom Ripple Effect */
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.wrapper-2aW0bm:active::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: var(--main-color);
+  opacity: 0.4;
+  transform: scale(0);
+  animation: ripple 0.5s linear;
+} 
